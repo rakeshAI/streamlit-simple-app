@@ -3,6 +3,7 @@ import streamlit as st
 #NLP pkgs
 import spacy
 from textblob import TextBlob
+from gensim.summarization import summarize 
 
 
 
@@ -64,6 +65,13 @@ def main():
 		if st.button("Summarize"):
 			if summary_options == 'gensim':
 				st.text("Using Gensim..")
+				summary_result = summarize(message)
+				st.success(summary_result)
+			elif summary_options == 'sumy':
+				st.text("Using sumy function is not updated yet, so plz try gensim for now..")
+			
+				
+
 
 
 
