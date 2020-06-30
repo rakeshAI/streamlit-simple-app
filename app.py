@@ -1,14 +1,4 @@
 import streamlit as st
-#Text
-st.title("I Love You Bangaram")
-
-#Images
-from PIL import Image
-img = Image.open("love.jpg")
-st.image(img,width=500,caption="smiling love")
-
-
-
 
 #Header
 st.title("streamlit tutorial")
